@@ -17,7 +17,7 @@ int itc_min_num(long long number){
 }
 
 int itc_rev_num(long long number) {
-    int c = 0;
+    long long c = 0;
 	if (number < 0)
         number = number * -1;
     while (number > 0) {
