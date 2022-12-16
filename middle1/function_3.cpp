@@ -53,7 +53,7 @@ long long itc_bin_num(long long number) {
 }
 
 long long itc_oct_num(long long number) {
-    int a, c;
+    long long a, c;
     a = 0;
     c = 1;
     while (number > 0) {
