@@ -17,13 +17,11 @@ int itc_min_num(long long number){
 }
 
 int itc_rev_num(long long number) {
-    long long c = 0;
+    if (number == 0)
+        return 1;
     if (number < 0)
         number = number * -1;
-    while (number > 0) {
-        c = c * 10 + number % 10;
-        number = number / 10;
-    }
+    long long c = itc_rev_ch(number);
     return itc_len_num(c);
 }
 
