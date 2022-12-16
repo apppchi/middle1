@@ -41,7 +41,7 @@ int itc_second_simple_max_num(long long number) {
 }
 
 long long itc_bin_num(long long number) {
-    ilong long a, c;
+    long long a, c;
     a = 0;
     c = 1;
     while (number > 0) {
