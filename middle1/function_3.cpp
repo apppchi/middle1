@@ -41,7 +41,7 @@ int itc_second_simple_max_num(long long number) {
 }
 
 long long itc_bin_num(long long number) {
-    int a, c;
+    ilong long a, c;
     a = 0;
     c = 1;
     while (number > 0) {
@@ -65,7 +65,7 @@ long long itc_oct_num(long long number) {
 }
 
 int itc_rev_bin_num(long long number) {
-    int a = itc_bin_num(number);
-    int b = itc_rev_num(a);
+    long long a = itc_bin_num(number);
+    long long b = itc_rev_num(a);
     return b;
 }
