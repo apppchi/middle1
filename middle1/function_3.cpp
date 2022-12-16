@@ -66,6 +66,6 @@ long long itc_oct_num(long long number) {
 
 int itc_rev_bin_num(long long number) {
     long long a = itc_bin_num(number);
-    long long b = itc_rev_num(a);
+    long long b = itc_rev_ch(a);
     return b;
 }
