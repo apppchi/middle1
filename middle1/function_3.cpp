@@ -1,20 +1,24 @@
 #include "middle.h"
 
-int itc_second_max_num(long long number) {
+int itc_second_max_num(long long number){
     if (number < 0)
         number = number * -1;
     if (number / 10 == 0)
         return -1;
-    int max_1 = itc_max_num(number);
-    int c, i;
-    c = -1;
-    while (number > 0) {
-        i = number % 10;
-        if (i > c && i != max_1)
-            c = i;
+    int max_1, max_2, ch;
+    max_1 = -1;
+    max_2 = -1;
+    while (number > 0){
+        ch = number % 10;
+        if (ch >= max_1){
+            max_2 = max_1;
+            max_1 = ch;
+        }
+        else if (ch >= max_2)
+            max_2 = ch;
         number = number / 10;
     }
-    return c;
+    return max_2;
 }
 
 int itc_second_simple_max_num(long long number) {
