@@ -14,3 +14,5 @@ int itc_rev_ch(long long number) {
         c = c * 10 + number % 10;
         number = number / 10;
     }
+    return c;
+}
