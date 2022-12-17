@@ -44,7 +44,7 @@ int itc_null_count(long long number){
 bool itc_mirror_num(long long number) {
     if (number < 0)
         number = number * -1;
-    int a = itc_rev_num(number);
+    int a = itc_rev_ch(number);
     if (a == number)
         return 1;
     return 0;
