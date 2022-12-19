@@ -6,7 +6,7 @@ int itc_rev_oct_num(long long number) {
     return b;
 }
 
-int itc_rev_ch(long long number) {
+long long itc_rev_ch(long long number) {
     long long c = 0;
     if (number < 0)
         number = number * -1;
