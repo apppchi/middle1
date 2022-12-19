@@ -22,8 +22,6 @@ int itc_rev_num(long long number) {
         return 1;
     if (number < 0)
         number = number * -1;
-    if (number == -2147483648)
-	return 10;
     c = itc_rev_ch(number);
     return itc_len_num(c);
 }
