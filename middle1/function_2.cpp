@@ -22,7 +22,7 @@ int itc_rev_num(long long number) {
         return 1;
     if (number < 0)
         number = number * -1;
-    long long c = itc_rev_ch(number);
+    c = itc_rev_ch(number);
     return itc_len_num(c);
 }
 
