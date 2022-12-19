@@ -17,6 +17,7 @@ int itc_min_num(long long number){
 }
 
 int itc_rev_num(long long number) {
+    long long c;
     if (number == 0)
         return 1;
     if (number < 0)
