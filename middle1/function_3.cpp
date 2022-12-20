@@ -65,7 +65,13 @@ long long itc_oct_num(long long number) {
 }
 
 int itc_rev_bin_num(long long number) {
-    long long a = itc_bin_num(number);
-    long long b = itc_rev_ch(a);
-    return b;
+    long long a, c;
+    a = 1;
+    c = 0;
+    while (number > 0) {
+        c = c + a * (number % 10);
+        a = a * 2;
+        number = number / 10;
+    }
+    return c;
 }
