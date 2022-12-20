@@ -1,9 +1,18 @@
 #include "middle.h"
 
 int itc_rev_oct_num(long long number) {
-    long long a = itc_oct_num(number);
-    long long b = itc_rev_ch(a);
-    return b;
+    long long a, c;
+    cin >> number;
+    a = 1;
+    c = 0;
+    while (number > 0) {
+        c = c + a * (number % 10);
+        a = a * 8;
+        number = number / 10;
+    }
+    return c;
+}
+
 }
 
 long long itc_rev_ch(long long number) {
