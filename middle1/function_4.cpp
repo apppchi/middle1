@@ -2,7 +2,6 @@
 
 int itc_rev_oct_num(long long number) {
     long long a, c;
-    cin >> number;
     a = 1;
     c = 0;
     while (number > 0) {
